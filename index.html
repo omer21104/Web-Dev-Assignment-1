@@ -1,21 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="BS/css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="BS/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hello, world!</title>
 
 </head>
 
 <body>
-    <h1>this is h1</h1>
-    <div>
-        some text
-    </div>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima similique beatae nihil deserunt officiis repellendus corporis laborum voluptatem ex esse eius, nobis ad laudantium quisquam odio qui ipsum eos aspernatur.</p>
+
+    <header class="p-3 bg-dark text-white sticky-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 navbar-brand">Omer Zano</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Personal info</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Skills</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Education</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Work Experience</a></li>
+                    <li><a href="#recommendation" class="nav-link px-2 text-white">Recommendations</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <main class="container">
+
+        <div class="row mb-2 mt-3">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-3 d-flex flex-column position-static">
+                        <h3 class="mb-3" id="personal-info">Personal Info</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">Omer Zano</li>
+                            <li class="list-group-item"><a href="mailto:omer21104@gmail.com
+                            ?subject=hello&body=hello">Email me</a></li>
+                            <li class="list-group-item"><a href="tel:0503419999">0503419999</a></li>
+                            <li class="list-group-item"><a href="https://goo.gl/maps/ZGsBnNeZkHVbuLB4A" target="_blank">Honolulu</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col p-4">
+                        <img class="img-fluid rounded mx-auto d-block" src="assets/shauli.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0">Skills</h3>
+                        <p class="mx-auto mt-0 mb-0"> Java</p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 69%;" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">69%</div>
+                        </div>
+                        <p class="mx-auto mt-0 mb-0">C++ </p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                        <p class="mx-auto mt-0 mb-0">Soccer </p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-md-10 mx-auto">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 position-static">
+                            <h3 class="mb-0">Education</h3>
+
+                            <div class="d-flex flex-row justify-content-between">
+
+                                <div class="">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.5005290945633!2d35.213366214547605!3d31.262247381455737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15030002069b9449%3A0xf1c474b42e4e2b0!2sOrt%20Arad%20High%20school!5e0!3m2!1sen!2sil!4v1618251080886!5m2!1sen!2sil"
+                                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <p class="card-text mb-auto">Ort Arad - High school education</p>
+                                    <p class="text-muted mb-auto">2000-2006</p>
+                                </div>
+                                <div class="">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.544797061989!2d34.5947883!3d31.5091937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502814a96e693ed%3A0xd2f92addc3834b6c!2z15TXnteb15zXnNeUINeU15DXp9eT157XmdeqINeh16TXmdeo!5e0!3m2!1sen!2sil!4v1618251821670!5m2!1sen!2sil"
+                                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <p class="card-text mb-auto">Sapir College - Bs.c Computer Science</p>
+                                    <p class="text-muted mb-auto">2019 - present</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 bg-secondary">
+                    d
+                </div>
+                <div class="col-md-8 bg-primary">
+                    d
+                </div>
+            </div>
+            <section>
+                education
+
+            </section>
+            <section>
+                work experience
+
+
+            </section>
+            <div id="padder"></div>
+            <section id="recommendation">
+                recommendation
+
+            </section>
+        </div>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="BS/js/bootstrap.min.js"></script>
+
+    </main>
 </body>
 
 </html>

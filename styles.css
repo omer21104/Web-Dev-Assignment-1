@@ -1,0 +1,11 @@
+#padder {
+    height: 500px;
+    width: 500px;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
