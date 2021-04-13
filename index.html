@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="BS/css/bootstrap.css" rel="stylesheet">
+    <link href="../Web Dev Assignment 1/BS/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Hello, world!</title>
 
@@ -20,12 +20,14 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 navbar-brand">Omer Zano</a></li>
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Personal info</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Skills</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Education</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Work Experience</a></li>
+                    <li>
+                        <h2 href="#" class="nav-link px-2 navbar-brand">Omer Zano</h2>
+                    </li>
+                    <li><a href="#" class="nav-link px-2 text-white fw-bold">Home</a></li>
+                    <li><a href="#personal-info" class="nav-link px-2 text-white">Personal info</a></li>
+                    <li><a href="#personal-info" class="nav-link px-2 text-white">Skills</a></li>
+                    <li><a href="#education" class="nav-link px-2 text-white">Education</a></li>
+                    <li><a href="#work-exp" class="nav-link px-2 text-white">Work Experience</a></li>
                     <li><a href="#recommendation" class="nav-link px-2 text-white">Recommendations</a></li>
                 </ul>
 
@@ -34,7 +36,8 @@
     </header>
     <main class="container">
 
-        <div class="row mb-2 mt-3">
+        <span class="anchor" id="personal-info"></span>
+        <div class="row mb-0 mt-3">
             <div class="col-md-6">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-3 d-flex flex-column position-static">
@@ -50,7 +53,7 @@
 
                     </div>
                     <div class="col p-4">
-                        <img class="img-fluid rounded mx-auto d-block" src="assets/shauli.jpg" alt="">
+                        <img class="img-fluid rounded mx-auto d-block" src="../Web Dev Assignment 1/assets/shauli.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -73,88 +76,128 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <span class="anchor" id="education"></span>
+        <div class="row my-3">
+            <div class="col-md-10 mx-auto">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 position-static">
+                        <h3 class="mb-0">Education</h3>
 
-            <div class="row my-3">
-                <div class="col-md-10 mx-auto">
-                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 position-static">
-                            <h3 class="mb-0">Education</h3>
+                        <div class="d-flex flex-row justify-content-between pt-2">
 
-                            <div class="d-flex flex-row justify-content-between">
-
-                                <div class="">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.5005290945633!2d35.213366214547605!3d31.262247381455737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15030002069b9449%3A0xf1c474b42e4e2b0!2sOrt%20Arad%20High%20school!5e0!3m2!1sen!2sil!4v1618251080886!5m2!1sen!2sil"
-                                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    <p class="card-text mb-auto">Ort Arad - High school education</p>
-                                    <p class="text-muted mb-auto">2000-2006</p>
-                                </div>
-                                <div class="">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.544797061989!2d34.5947883!3d31.5091937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502814a96e693ed%3A0xd2f92addc3834b6c!2z15TXnteb15zXnNeUINeU15DXp9eT157XmdeqINeh16TXmdeo!5e0!3m2!1sen!2sil!4v1618251821670!5m2!1sen!2sil"
-                                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    <p class="card-text mb-auto">Sapir College - Bs.c Computer Science</p>
-                                    <p class="text-muted mb-auto">2019 - present</p>
-                                </div>
+                            <div class="p-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.5005290945633!2d35.213366214547605!3d31.262247381455737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15030002069b9449%3A0xf1c474b42e4e2b0!2sOrt%20Arad%20High%20school!5e0!3m2!1sen!2sil!4v1618251080886!5m2!1sen!2sil"
+                                    width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <p class="card-text mb-auto">Ort Arad - High school education</p>
+                                <p class="text-muted mb-auto">2000-2006</p>
+                            </div>
+                            <div class="p-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.544797061989!2d34.5947883!3d31.5091937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502814a96e693ed%3A0xd2f92addc3834b6c!2z15TXnteb15zXnNeUINeU15DXp9eT157XmdeqINeh16TXmdeo!5e0!3m2!1sen!2sil!4v1618251821670!5m2!1sen!2sil"
+                                    width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <p class="card-text mb-auto">Sapir College - Bs.c Computer Science</p>
+                                <p class="text-muted mb-auto">2019 - present</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="row my-3">
-                <div class="col-md-10 mx-auto">
-                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                        <div class="col p-4 position-static">
-                            <h3 class="mb-0">Work Experience</h3>
 
-                            <table class="table table-striped">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Adress</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Duration</th>
-                                        <th scope="col">Description</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="px-1"><img src="assets/Logo-team3.jpg" alt="Team 3 logo" class="img-fluid img-thumbnail table-img mx-auto d-block"></td>
-                                        <td class=" align-middle">Team 3</td>
-                                        <td class=" align-middle">Tel-Aviv</td>
-                                        <td class=" align-middle">Head Of Security</td>
-                                        <td class=" align-middle">2017-2019</td>
-                                        <td class="text-muted small align-middle">Manage security team at Facebook HQ in Tel Aviv</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-1"><img src="assets/Logo-tenbis.jpg" alt="Team 3 logo" class="img-fluid img-thumbnail table-img mx-auto d-block"></td>
-                                        <td class=" align-middle">Ten Bis</td>
-                                        <td class=" align-middle">Beer Sheva</td>
-                                        <td class=" align-middle">Courier</td>
-                                        <td class=" align-middle">2020-2021</td>
-                                        <td class="text-muted small align-middle">Food Delivery</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+        </div>
+        <span class="anchor" id="work-exp"></span>
+        <div class="row my-3">
+            <div class="col-md-10 mx-auto">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 position-static">
+                        <h3 class="mb-0">Work Experience</h3>
+
+                        <table class="table table-striped">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Adress</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Duration</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-1"><img src="../Web Dev Assignment 1/assets/Logo-team3.jpg" alt="Team 3 logo" class="img-fluid img-thumbnail table-img mx-auto d-block"></td>
+                                    <td class=" align-middle">Team 3</td>
+                                    <td class=" align-middle">Tel-Aviv</td>
+                                    <td class=" align-middle">Head Of Security</td>
+                                    <td class=" align-middle">2017-2019</td>
+                                    <td class="text-muted small align-middle">Manage security team at Facebook HQ in Tel Aviv</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-1"><img src="../Web Dev Assignment 1/assets/Logo-tenbis.jpg" alt="Team 3 logo" class="img-fluid img-thumbnail table-img mx-auto d-block"></td>
+                                    <td class=" align-middle">Ten Bis</td>
+                                    <td class=" align-middle">Beer Sheva</td>
+                                    <td class=" align-middle">Courier</td>
+                                    <td class=" align-middle">2020-2021</td>
+                                    <td class="text-muted small align-middle">Food Delivery</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <span class="anchor" id="recommendation"></span>
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="row p-4 position-static">
+                        <h3 class="mb-0">Recommendations</h3>
+
+                        <div class="col-md-6 d-flex flex-row justify-content-between">
+                            <div class="container py-3 text-center">
+                                <img class="mx-auto d-block rounded-circle rec-img" alt="100x100" src="../Web Dev Assignment 1/assets/avi.jpg">
+                                <h5 class="text-center pt-2">Avi Partuk</h5>
+                                <p class="text-center">Bum</p>
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img mx-auto" src="../Web Dev Assignment 1/assets/facebook-icon.png" alt="facebook"></a>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img mx-auto" src="../Web Dev Assignment 1/assets/linkedin-icon.png" alt="LinkedIn"></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 d-flex flex-row justify-content-between">
+                            <div class="container py-3 text-center">
+                                <img class="mx-auto d-block rounded-circle rec-img" alt="100x100" src="../Web Dev Assignment 1/assets/amazia.jpg">
+                                <h5 class="text-center pt-2">Amazia</h5>
+                                <p class="text-center">Real Estate Agent</p>
+
+                                <div>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img mx-auto" src="../Web Dev Assignment 1/assets/facebook-icon.png" alt="facebook"></a>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img mx-auto" src="../Web Dev Assignment 1/assets/linkedin-icon.png" alt="LinkedIn"></a>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
-
-            <div id="padder"></div>
-            <section id="recommendation">
-                recommendation
-
-            </section>
         </div>
-
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="BS/js/bootstrap.min.js"></script>
-
     </main>
+    <footer class="footer">
+        <div class="container d-flex flex-row justify-content-between">
+            <div>
+                <span>&#169;All Rights Reserved To <a href="https://github.com/omer21104" target="_blank">Omer Zano</a> && <a href="https://github.com/GalAloush" target="_blank">Gal Aloush</a></span>
+            </div>
+            <div>
+                <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img" src="../Web Dev Assignment 1/assets/facebook-icon.png" alt="facebook"></a></span>
+                <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img" src="../Web Dev Assignment 1/assets/linkedin-icon.png" alt="LinkedIn"></a></span>
+                <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" target="_blank"><img class="icon-img" src="../Web Dev Assignment 1/assets/insta-icon.png" alt="Instagram"></a></span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
