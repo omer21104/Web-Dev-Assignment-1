@@ -3,6 +3,15 @@
     width: 500px;
 }
 
+#personal-img {
+    margin-top: 25%;
+    max-width: 95%;
+}
+iframe {
+    height: 200px;
+    border: 0;
+}
+
 .thumbnail {
     max-width: 100%;
     height: auto;
