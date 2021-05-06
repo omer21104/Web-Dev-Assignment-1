@@ -3,10 +3,22 @@
     width: 500px;
 }
 
+#backToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 69;
+}
+
 #personal-img {
-    margin-top: 25%;
     max-width: 95%;
 }
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
 iframe {
     height: 200px;
     border: 0;
